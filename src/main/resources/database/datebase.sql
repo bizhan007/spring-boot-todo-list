@@ -1,0 +1,11 @@
+DROP TABLE IF EXISTS tasks;
+
+CREATE TABLE tasks
+(
+    id INT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    priority VARCHAR(255) NOT NULL,
+    description VARCHAR(255) NOT NULL,
+    solutions VARCHAR(255) NULL DEFAULT 'NOT DONE',
+    date DATE NOT NULL DEFAULT CURRENT_DATE
+);
